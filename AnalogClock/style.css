@@ -1,0 +1,51 @@
+body {
+    background-image: repeating-conic-gradient(wheat, pink, wheat, pink, wheat);
+    background-color: #313131;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+    font-weight: bold;
+    height: 100vh;
+}
+
+#clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
+    border: 15px ridge brown;
+    /* background-color: #deb887; */
+    background-image: conic-gradient(#deb887, #feb887, #deb887, #feb887, #deb887);
+    font-size: 20px;
+    width: 400px;
+    border-radius: 50%;
+    height: 400px;
+}
+
+.hour-line,
+.minute-line,
+.second-line {
+    position: absolute;
+    transform-origin: 50% 100%;
+    padding-bottom: 15%;
+    left: 48%;
+}
+
+.hour-line {
+    width: 6px;
+    height: 40px;
+    top: 90px;
+}
+
+.minute-line {
+    width: 4px;
+    height: 80px;
+    top: 40px;
+}
+
+.second-line {
+    width: 2px;
+    height: 100px;
+    top: 30px;
+}
